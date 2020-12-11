@@ -1,0 +1,37 @@
+section.produto{
+  margin: 40px 0;
+}
+
+section.produto img{
+  width: 500px;
+  height: 400px;
+  display: block;
+  margin: 30px auto;
+}
+
+section.produto p{
+  display: block;
+  margin: 0 auto;
+  width: 700px;
+  text-align: justify;
+}
+
+section.produto h2{
+  color: #372D7D;
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media only screen and (max-device-width : 700px){
+  section.produto p{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-device-width : 500px){
+  section.produto img{
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pagamento - Projeto</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pagamento.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+  <header>
+    <div class="main">
+      <img src="img/mobileMenu.png" class="mobileMenu">
+      <img src="img/logo.png" class="logo">
+      <nav>
+        <a href="index.html#produtos">Produtos</a>
+        <a href="index.html#demonstracao">Demonstração</a>
+        <a href="index.html#depoimentos">Depoimentos</a>
+        <a href="index.html#endereco">Endereço</a>
+      </nav>
+      <div class="options">
+        <div class="search">
+          <input type="search" name="search">
+          <img src="img/lupa.png">
+        </div>
+        <a href="login.html" class="login"><img src="img/login.png"></a>
+        <a href="carrinho.html"><img src="img/carrinho.png"></a>
+      </div>
+    </div>
+    <div class="slogan">Slogam da empresa aqui</div>
+  </header>
+
+  <section class="payment">
+    <h1 class="title">Pagamento</h1>
+
+    <div>
+      <input type="text" name="numeroCartao" placeholder="Número do cartão">
+      <input type="text" name="nomeCartao" placeholder="Nome impresso no cartão">
+      <input type="text" name="validadeCartao" placeholder="Validade do cartão">
+      <input type="text" name="ccv" placeholder="CCV">
+      <select name="parcelas"></select>
+      <button class="pagar button">Pagar</button>
+    </div>
+  </section>
+
+  <footer>
+    <a href="http://facebook.com" target="_blank"><img src="img/facebook.png"></a>
+    <a href="http://twitter.com" target="_blank"><img src="img/twitter.png"></a>
+    <a href="http://instagram.com" target="_blank"><img src="img/instagram.png"></a>
+  </footer>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/mask.min.js"></script>
+  <script src="js/pagamento.js"></script>
+</body>
+</html>

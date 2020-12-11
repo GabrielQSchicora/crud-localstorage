@@ -1,0 +1,220 @@
+/*============= Frase =============*/
+section.message{
+  background-image: url('../img/bgPhrase.jpg');
+  background-size: 100%;
+  background-attachment: fixed;
+  padding: 160px 0 120px;
+  margin-top: -40px;
+  z-index: 1;
+}
+
+section.message div.text{
+  background-color: #2d476f;
+  padding: 25px;
+  text-align: center;
+  width: 450px;
+  margin: 0 auto;
+  color: #FFF;
+}
+
+/*============= Produtos =============*/
+section.products{
+  padding: 50px 0;
+}
+
+section.products div.products{
+  width: 600px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+section.products div.products div.product{
+  width: 250px;
+  height: 250px;
+  margin: 30px 0;
+  position: relative;
+  background-size: 100% 100%;
+}
+
+section.products div.products div.product a{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+}
+
+section.products div.products div.product a h2{
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  top: 50%;
+  margin-bottom: -50%;
+  transform: translate(-50%, -50%);
+  color: #FFF;
+  text-shadow: 0px 0px 9px rgba(0, 0, 0, 1);
+}
+
+/*============= Demonstração =============*/
+section.demonstration{
+  padding: 50px 0;
+  background-image: url('../img/bgDeonstration.jpg');
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: center;
+}
+
+section.demonstration h1.title{
+  color: #FFF;
+}
+
+section.demonstration iframe{
+  display: block;
+  margin: 50px auto 0;
+}
+
+/*============= Depoimentos =============*/
+section.depositions{
+  padding: 50px 0;
+}
+
+section.depositions div.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  margin: 35px auto 0;
+}
+
+section.depositions div.list div.deposition{
+  width: 25%;
+  text-align: center;
+  background-color: #2D777D;
+  height: 100px;
+  padding: 35px 10px 0;
+  box-sizing: border-box;
+  border-radius: 15px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+/*============= Endereço =============*/
+section.address{
+  padding: 50px 0;
+  background-image: url('../img/bgContact.jpg');
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: bottom center;
+}
+
+section.address h1.title{
+  color: #FFF;
+}
+
+section.address div.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  margin: 40px auto 0;
+}
+
+section.address div.list div{
+  width: 45%;
+  background-color: #2D777D;
+  text-align: center;
+  border-radius: 15px;
+  color: #FFF;
+  font-weight: bold;
+  height: 130px;
+  padding: 20px 0 0;
+  font-size: 20px;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+}
+
+section.address div.list div span{
+  font-size: 13px;
+  display: block;
+  margin-top: 10px;
+}
+
+section.address div.list div a{
+  font-size: 13px;
+  display: block;
+  margin-top: 10px;
+  color: #FFF;
+}
+
+section.address div.map{
+  width: 600px;
+  height: 400px;
+  margin: 40px auto 0;
+  background-color: #FFF;
+}
+
+section.address div.map iframe{
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-device-width : 900px){
+  section.message,
+  section.demonstration{
+    background-size: auto 100%;
+    background-position: center center;
+  }
+
+  section.depositions div.list{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section.depositions div.list div.deposition{
+    margin: 20px 0;
+    height: auto;
+    width: 80%;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-device-width : 600px){
+  section.products div.products{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section.demonstration iframe{
+    width: 300px;
+    height: 170px;
+  }
+
+  section.address div.list{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  section.address div.list div{
+    margin: 20px 0;
+    height: auto;
+    width: 80%;
+    padding: 20px;
+  }
+
+  section.address div.map{
+    width: 90%;
+  }
+}
+
+@media only screen and (max-device-width : 500px){
+  section.message div.text{
+    width: 90%;
+    box-sizing: border-box;
+  }
+}

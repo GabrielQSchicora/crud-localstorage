@@ -1,0 +1,167 @@
+/*============= General =============*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  outline: none;
+}
+
+section h1.title{
+  color: #372D7D;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.button{
+  background-color: #2D777D;
+  color: #FFF;
+  text-decoration: none;
+  display: table;
+  margin: 0 auto;
+  padding: 10px 15px;
+  margin-top: 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+/*============= Header =============*/
+header{
+  z-index: 2;
+  position: relative;
+}
+
+header div.main{
+  background-color: #2d476f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+header div.main img.mobileMenu{
+  display: none;
+}
+
+header div.main img.logo{
+  width: 200px;
+}
+
+header div.main nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header div.main nav a{
+  color: #FFF;
+  background-color: #2D777D;
+  text-decoration: none;
+  margin: 0 5px;
+  padding: 5px 10px;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+
+header div.main nav a:hover{
+  background-color: #316A87;
+}
+
+header div.main div.options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header div.main div.options div.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header div.main div.options div.search input{
+  border-radius: 15px;
+  padding: 5px 10px;
+  border: none;
+  width: 150px;
+  visibility: hidden;
+}
+
+header div.main div.options div.search img,
+header div.main div.options a img{
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+header div.slogan{
+  text-align: center;
+  background-color: rgba(42, 60, 86, 0.81);
+  color: #FFF;
+  padding: 10px;
+}
+
+/*============= Footer =============*/
+footer{
+  text-align: center;
+  background-color: #2d476f;
+  padding: 25px 0;
+}
+
+footer a{
+  margin: 0 20px;
+}
+
+footer a img{
+  width: 32px;
+}
+
+@media only screen and (max-device-width : 900px){
+  header div.main{
+    flex-wrap: wrap;
+  }
+
+  header div.main img.mobileMenu{
+    display: block;
+    order: 1;
+  }
+
+  header div.main img.logo{
+    order: 2;
+  }
+
+  header div.main div.options{
+    order: 3;
+  }
+
+  header div.main nav{
+    order: 4;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+    display: none;
+  }
+
+  header div.main nav a{
+    width: 100%;
+    border-radius: 0px;
+    margin: 5px 0;
+    padding: 15px 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-device-width : 580px){
+  header div.main div.options div.search{
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width : 365px){
+  header div.main img.logo{
+    display: none;
+  }
+}

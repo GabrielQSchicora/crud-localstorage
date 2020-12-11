@@ -1,0 +1,30 @@
+section.payment{
+  background-color: #2d476f;
+  width: 600px;
+  border-radius: 30px;
+  margin: 80px auto;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+section.payment h1{
+  text-align: center;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+section.payment input,
+section.payment select{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-device-width : 600px){
+  section.payment{
+    width: 100%;
+  }
+}
